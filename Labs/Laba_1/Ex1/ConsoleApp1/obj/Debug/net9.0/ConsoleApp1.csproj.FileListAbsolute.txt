@@ -12,3 +12,17 @@ C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\ConsoleApp1\Con
 C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.pdb
 C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.genruntimeconfig.cache
 C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ref\ConsoleApp1.dll
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.exe
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.deps.json
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.runtimeconfig.json
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.pdb
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.dll
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\obj\Debug\net9.0\refint\ConsoleApp1.dll
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.pdb
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\Vlad\Documents\SDP_SoftwareDesignPrinciples\Labs\Laba_1\Ex1\ConsoleApp1\obj\Debug\net9.0\ref\ConsoleApp1.dll
