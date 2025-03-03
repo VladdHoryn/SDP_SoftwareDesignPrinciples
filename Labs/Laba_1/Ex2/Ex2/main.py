@@ -1,21 +1,22 @@
 import random
 def Generete_R():
-    return random.randint(0, 10)
+    return 1
+    # return random.randint(0, 1)
 
 def Generete_X_and_Y():
-    x = random.randint(0, 10)
-    y = random.randint(0, 10)
+    x = random.uniform(-1, 3)
+    y = random.uniform(-1, 3)
     return x, y
 
 def FindResult(R, x, y):
     result = "No answer"
     if (abs(x) > R or abs(y) > R):
         result = "No"
-    elif ((x + R)*(x + R) + (y - R)*(y - R) < R*R or (x - R)*(x - R) + (y + R)*(y + R) < R*R):
+    elif (x + R)*(x + R) + (y - R)*(y - R) < R*R or (x - R)*(x - R) + (y + R)*(y + R) < R*R:
         result = "No"
-    elif ((x + R) * (x + R) + (y - R) * (y - R) == R * R or (x - R) * (x - R) + (y + R) * (y + R) == R * R):
+    elif (x + R) * (x + R) + (y - R) * (y - R) == R * R or (x - R) * (x - R) + (y + R) * (y + R) == R * R:
         result = "On the verge"
-    elif (x == R or y == R):
+    elif x == R or y == R:
         result = "On the verge"
     else:
         result = "Yes"

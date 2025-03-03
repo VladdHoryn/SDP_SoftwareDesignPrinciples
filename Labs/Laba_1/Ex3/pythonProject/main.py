@@ -34,29 +34,67 @@ def enterFigure(message, whiteFig, blackFig, figureName, color):
         return blackFig
 
 def searchAsRook(x, y, colorToSearch, whiteFig, blackFig):
-    result = []
-    if(colorToSearch == "W"):
-        for i in whiteFig:
-            if(x == i.x or y == i.y):
-                result.append(i)
+    result = set()
+    # if(colorToSearch == "W"):
+    #     for i in whiteFig:
+    #         if(x == i.x or y == i.y):
+    #             result.append(i)
+    # elif (colorToSearch == "B"):
+    #     for i in blackFig:
+    #         if (x == i.x or y == i.y):
+    #             result.append(i)
+
+    if (colorToSearch == "W"):
+        for i in range(1, 8):
+            for j in whiteFig:
+                if j.x == i and j.y == y and j.color == colorToSearch:
+                    result.add(j)
+                elif j.x == x and j.y == i and j.color == colorToSearch:
+                    result.add(j)
     elif (colorToSearch == "B"):
-        for i in blackFig:
-            if (x == i.x or y == i.y):
-                result.append(i)
+        for i in range(1, 8):
+            for j in blackFig:
+                if j.x == i and j.y == y and j.color == colorToSearch:
+                    result.add(j)
+                elif j.x == x and j.y == i and j.color == colorToSearch:
+                    result.add(j)
 
     return result
 
 
 def searchAsBishop(x, y, colorToSearch, whiteFig, blackFig):
-    result = []
-    if (colorToSearch == "W"):
-        for i in whiteFig:
-            if (abs(x - i.x) == abs(y - i.y)):
-                result.append(i)
-    elif (colorToSearch == "B"):
-        for i in blackFig:
-            if (abs(x - i.x) == abs(y - i.y)):
-                result.append(i)
+    result = set()
+    # if (colorToSearch == "W"):
+    #     for i in whiteFig:
+    #         if (abs(x - i.x) == abs(y - i.y)):
+    #             result.append(i)
+    # elif (colorToSearch == "B"):
+    #     for i in blackFig:
+    #         if (abs(x - i.x) == abs(y - i.y)):
+    #             result.append(i)
+
+    if colorToSearch == "W":
+        for i in range(1, 8):
+            for j in whiteFig:
+                if j.x == x+i and j.y == y+i and j.color == colorToSearch:
+                    result.add(j)
+                elif j.x == x+i and j.y == y-i and j.color == colorToSearch:
+                    result.add(j)
+                elif j.x == x-i and j.y == y-i and j.color == colorToSearch:
+                    result.add(j)
+                elif j.x == x-i and j.y == y+i and j.color == colorToSearch:
+                    result.add(j)
+    elif colorToSearch == "B":
+        for i in range(1, 8):
+            for j in blackFig:
+                if j.x == x + i and j.y == y + i and j.color == colorToSearch:
+                    result.add(j)
+                elif j.x == x + i and j.y == y - i and j.color == colorToSearch:
+                    result.add(j)
+                elif j.x == x - i and j.y == y - i and j.color == colorToSearch:
+                    result.add(j)
+                elif j.x == x - i and j.y == y + i and j.color == colorToSearch:
+                    result.add(j)
 
     return result
 
@@ -132,3 +170,4 @@ if __name__ == '__main__':
     for i in blackFig:
         if not (attack(i, whiteFig, blackFig)) and not (defense(i, whiteFig, blackFig)):
             print(i.name, "(", i.x, ";", i.y, ") simple move")
+
