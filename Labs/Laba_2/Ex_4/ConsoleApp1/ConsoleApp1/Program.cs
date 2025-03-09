@@ -4,21 +4,30 @@ using System.Runtime.InteropServices.JavaScript;
 
 class Program
 {
-    static double[,] EnterArray(int hight, int width)
+    static double[,] EnterArray(int hight)
     {
-        double[,] result = new double[hight, width];
-        for (int i = 0; i < hight; ++i)
+        double[,] result = new double[hight+1, hight+1];
+
+        for (int i = 1; i <= hight; ++i)
+        {
+            for (int j = 1; j <= hight; ++j)
+            {
+                result[i, j] = 0;
+            }
+        }
+        
+        for (int i = 1; i <= hight; ++i)
         {
             bool test = true;
             while (test)
             {
-                Console.WriteLine("Enter " + width + " elements of array: ");
+                Console.WriteLine("Enter " + i + " elements of array: ");
                 string line = Console.ReadLine();
                 string[] number = line.Split(' ');
-                if (number.Length == width)
+                if (number.Length == i)
                 {
                     test = false;
-                    for (int j = 0; j < width; ++j)
+                    for (int j = 0; j < i; ++j)
                     {
                         if (!double.TryParse(number[j], out double resultt))
                         {
@@ -27,13 +36,13 @@ class Program
                         }
                         else
                         {
-                            result[i, j] = resultt;
+                            result[i, j+1] = resultt;
                         }
                     }
                 }
                 else
                 {
-                    Console.WriteLine("\nTher are not " + width + " elements\n Try again");
+                    Console.WriteLine("\nTher are not " + i + " elements\n Try again");
                 }
             }
         }
@@ -41,17 +50,17 @@ class Program
         return result;
     }
 
-    static double[] FindAnswer(double[,] arr, int hight, int width)
+    static double[] FindAnswer(double[,] arr, int hight)
     {
-        double[] result = new double[width];
-        for (int i = 0; i < width; ++i)
+        double[] result = new double[hight+1];
+        for (int i = 1; i <= hight; ++i) //дописати
             result[i] = 0;
-        for (int i = 0; i < width; ++i)
+        for (int i = 1; i <= hight; ++i)
         {
-            for (int j = 0; j < hight; ++j)
+            for (int j = 1; j <= i; ++j)
             {
-                if (arr[j, i] < 0)
-                    result[i] += arr[j, i];
+                if (arr[i, j] < 0)
+                    result[i] += arr[i, j];
             }
         }
 
@@ -61,15 +70,21 @@ class Program
     static void Main()
     {
         int hight = 2;
-        int width = 4;
-        double[,] arr = EnterArray(hight, width);
-
-        double[] result = FindAnswer(arr, hight, width);
-
-        foreach (var i in result)
-        {
-            Console.Write(i + " ");
-        }
+        double[,] arr = EnterArray(hight);
         
+        // for (int i = 1; i <= hight; ++i)
+        // {
+        //     for (int j = 1; j <= hight; ++j)
+        //     {
+        //         Console.Write(arr[i, j] + " ");
+        //     }
+        //     Console.WriteLine();
+        // }
+
+        double[] result = FindAnswer(arr, hight);
+
+        
+        for(int i = 1; i <= hight; ++i)
+            Console.Write(result[i] + " ");
     }
 }

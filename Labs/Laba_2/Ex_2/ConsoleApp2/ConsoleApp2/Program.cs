@@ -50,9 +50,9 @@ class Program
             for (int j = 0; j < width; ++j)
             {
                 if (minn > Math.Abs(arr[i, j]))
-                    minn = arr[i, j];
-                if (maxx < Math.Abs(arr[i, j]))
-                    maxx = arr[i, j];
+                    minn = Math.Abs(arr[i, j]);
+                if (maxx< Math.Abs(arr[i, j]))
+                    maxx = Math.Abs(arr[i, j]);
             }
         }
 
@@ -62,7 +62,7 @@ class Program
         {
             for (int j = 0; j < width; ++j)
             {
-                if (arr[i, j] > minn && arr[i, j] < maxx)
+                if (arr[i, j] <= minn || arr[i, j] >= maxx)
                 {
                     quantity++;
                     summ += arr[i, j];

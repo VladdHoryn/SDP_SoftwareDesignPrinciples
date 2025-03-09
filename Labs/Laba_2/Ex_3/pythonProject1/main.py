@@ -2,11 +2,11 @@ def find_AVR_for_each(arr, hight, width):
     result = []
     sum = 0
 
-    for i in range(0, hight):
+    for i in range(0, width):
         sum = 0
-        for j in range(0, width):
-            sum += arr[i][j]
-        result.append(sum / width)
+        for j in range(0, hight):
+            sum += arr[j][i]
+        result.append(sum / hight)
 
     return result
 
@@ -16,7 +16,7 @@ def find_AVR_for_all(arr, hight):
     for i in arr:
         result += i;
 
-    result /= hight
+    result /= width
 
     return result
 

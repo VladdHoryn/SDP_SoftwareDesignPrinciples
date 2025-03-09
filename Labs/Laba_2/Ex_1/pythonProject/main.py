@@ -2,7 +2,7 @@ def findResult():
     while True:
         n = int(input("Enter amount of elements in range: "))
         if n <= 0:
-            print("Inout can not be negative or equal 0 \n Try again")
+            print("Input can not be negative or equal 0 \n Try again")
         else:
             break
 
@@ -11,9 +11,9 @@ def findResult():
     even = 0
     for i in range(1, n + 1):
         number = int(input())
-        if i % 2 == 0:
+        if number % 2 == 0:
             even += number
-        else:
+        if number % 3 == 0:
             odd += number
 
     return even - odd
