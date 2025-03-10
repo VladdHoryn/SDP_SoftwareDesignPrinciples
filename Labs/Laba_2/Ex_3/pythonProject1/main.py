@@ -1,3 +1,6 @@
+import random
+
+
 def find_AVR_for_each(arr, hight, width):
     result = []
     sum = 0
@@ -14,7 +17,7 @@ def find_AVR_for_each(arr, hight, width):
 def find_AVR_for_all(arr, hight):
     result = 0
     for i in arr:
-        result += i;
+        result += i
 
     result /= width
 
@@ -32,9 +35,11 @@ if __name__ == '__main__':
         arr.append(temp_arr)
 
     for i in range(0, hight):
-        print("Enter " + str(width) + " elements of array one by one: ")
         for j in range(0, width):
-            arr[i][j] = int(input())
+            arr[i][j] = random.randint(1, 10)
+
+    for i in arr:
+        print(i)
 
     result = find_AVR_for_each(arr, hight, width)
     print(result)

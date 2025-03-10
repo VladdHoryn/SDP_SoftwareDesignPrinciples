@@ -53,14 +53,15 @@ class Program
     static double[] FindAnswer(double[,] arr, int hight)
     {
         double[] result = new double[hight+1];
-        for (int i = 1; i <= hight; ++i) //дописати
+        for (int i = 1; i <= hight; ++i)
             result[i] = 0;
+        
         for (int i = 1; i <= hight; ++i)
         {
-            for (int j = 1; j <= i; ++j)
+            for (int j = 1; j <= hight; ++j)
             {
-                if (arr[i, j] < 0)
-                    result[i] += arr[i, j];
+                if (arr[j, i] < 0)
+                    result[i] += arr[j, i];
             }
         }
 
@@ -69,17 +70,8 @@ class Program
     
     static void Main()
     {
-        int hight = 2;
+        int hight = 5;
         double[,] arr = EnterArray(hight);
-        
-        // for (int i = 1; i <= hight; ++i)
-        // {
-        //     for (int j = 1; j <= hight; ++j)
-        //     {
-        //         Console.Write(arr[i, j] + " ");
-        //     }
-        //     Console.WriteLine();
-        // }
 
         double[] result = FindAnswer(arr, hight);
 
