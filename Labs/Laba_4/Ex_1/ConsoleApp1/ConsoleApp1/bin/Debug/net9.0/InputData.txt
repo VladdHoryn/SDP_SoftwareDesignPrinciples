@@ -1,0 +1,432 @@
+Doe
+John
+Michael
+Male
+American
+180,5
+75,2
+1990
+5
+15
++123456789
+12345
+USA
+California
+LA County
+Los Angeles
+Main Street
+12A
+34
+H001
+Cardiology
+MR12345
+Hypertension
+O+
+Smith
+Anna
+Elizabeth
+Female
+sfgewitish
+165,3
+60,1
+1985
+10
+22
++987654321
+54321
+UK
+England
+London
+Greater London
+Baker Street
+221B
+12
+H002
+Neurology
+MR54321
+Migraine
+A-
+Brown
+James
+William
+Male
+Canadian
+175,0
+80,0
+1992
+7
+8
++111222333
+11223
+Canada
+Ontario
+Toronto
+Downtown
+Queen Street
+45C
+9
+H003
+Orthopedics
+MR67890
+Fracture
+B+
+Wilson
+Emma
+Grace
+Female
+Australian
+168,2
+55,5
+1988
+3
+12
++444555666
+33445
+Australia
+New South Wales
+Sydney
+Central
+George Street
+77D
+5
+H004
+Dermatology
+MR11223
+Eczema
+AB-
+Taylor
+David
+Alexander
+Male
+German
+182,4
+78,6
+1995
+9
+25
++666777888
+55667
+Germany
+Bavaria
+Munich
+Central Munich
+Marienplatz
+50E
+3
+H005
+Oncology
+MR44556
+Lung Cancer
+O-
+Anderson
+Sophia
+Rose
+Female
+French
+160,8
+58,3
+1990
+1
+30
++999000111
+77889
+France
+Île-de-France
+Paris
+Paris Center
+Champs-Élysées
+101A
+7
+H006
+Cardiology
+MR77889
+Heart Disease
+A+
+Thomas
+Michael
+Henry
+Male
+Italian
+177,6
+74,8
+1991
+6
+5
++222333444
+99000
+Italy
+Lazio
+Rome
+Central Rome
+Via Roma
+89B
+2
+H007
+Gastroenterology
+MR99000
+Ulcer
+B-
+Jackson
+Olivia
+Marie
+Female
+Spanish
+162,9
+63,7
+1987
+4
+18
++333444555
+11211
+Spain
+Catalonia
+Barcelona
+City Center
+La Rambla
+33C
+4
+H008
+Pulmonology
+MR11211
+Asthma
+AB+
+White
+Ethan
+Jack
+Male
+Russian
+181,0
+85,0
+1993
+11
+29
++777888999
+22332
+Russia
+Moscow Oblast
+Moscow
+Central Moscow
+Arbat Street
+66D
+6
+H009
+Endocrinology
+MR22332
+Diabetes
+O+
+Harris
+Isabella
+Lily
+Female
+Japanese
+158,4
+52,6
+1986
+8
+14
++555666777
+33444
+Japan
+Kanto
+Tokyo
+Shibuya
+Harajuku Street
+22E
+8
+H010
+Psychiatry
+MR33444
+Depression
+A-
+Martin
+Daniel
+Noah
+Male
+Chinese
+176,5
+72,4
+1994
+2
+27
++111222999
+44555
+China
+Beijing
+Beijing City
+Chaoyang
+Wangfujing
+88A
+10
+H011
+Hematology
+MR44555
+Anemia
+B+
+Thompson
+Mia
+Charlotte
+Female
+Brazilian
+163,7
+65,2
+1989
+12
+3
++888999111
+55666
+Brazil
+São Paulo
+São Paulo City
+Central
+Paulista Avenue
+55B
+12
+H012
+Nephrology
+MR55666
+Kidney Failure
+AB-
+Garcia
+Liam
+Benjamin
+Male
+Mexican
+178,9
+79,1
+1996
+7
+20
++999111222
+66777
+Mexico
+Mexico City
+Mexico City
+Polanco
+Reforma Avenue
+20C
+14
+H013
+Urology
+MR66777
+Kidney Stones
+O-
+Martinez
+Charlotte
+Harper
+Female
+Argentinian
+167,1
+61,9
+1984
+5
+7
++222333111
+77888
+Argentina
+Buenos Aires
+Buenos Aires City
+Recoleta
+Florida Street
+12D
+16
+H014
+Ophthalmology
+MR77888
+Glaucoma
+A+
+Robinson
+Lucas
+James
+Male
+South African
+183,3
+86,4
+1997
+9
+11
++333111555
+88999
+South Africa
+Gauteng
+Johannesburg
+Sandton
+Nelson Mandela Square
+44E
+18
+H015
+Rheumatology
+MR88999
+Arthritis
+B-
+Clark
+Ella
+Madison
+Female
+South Korean
+159,9
+55,1
+1992
+10
+16
++111999777
+99011
+South Korea
+Seoul
+Seoul City
+Gangnam
+Cheongdam Street
+77F
+20
+H016
+Neurology
+MR99011
+Epilepsy
+AB+
+Rodriguez
+Mason
+Elijah
+Male
+Indian
+180,1
+77,3
+1991
+6
+22
++777333888
+11200
+India
+Maharashtra
+Mumbai
+Colaba
+Marine Drive
+30G
+22
+H017
+Immunology
+MR11200
+Autoimmune Disease
+O-
+Lewis
+Avery
+Scarlett
+Female
+Turkish
+164,2
+59,8
+1995
+3
+9
++888222444
+22300
+Turkey
+Istanbul
+Istanbul City
+Beyoğlu
+Istiklal Avenue
+90H
+24
+H018
+Hepatology
+MR22300
+Liver Cirrhosis
+A-
