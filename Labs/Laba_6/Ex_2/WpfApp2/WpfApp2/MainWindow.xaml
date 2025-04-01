@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1000">
+    <StackPanel Margin="0">
+        <TextBlock Text="Тип навчального матеріалу" Margin="10" HorizontalAlignment="Center"/>
+        <ComboBox x:Name="MaterialType" Width="200" Height="30" VerticalAlignment="Top" Margin="10" SelectionChanged="MaterialType_SelectionChanged">
+            <ComboBoxItem Content="Книга" />
+            <ComboBoxItem Content="Конспект" />
+        </ComboBox>
+        
+        <TextBlock Text="Предмет" Margin="10" HorizontalAlignment="Center"/>
+        <TextBox x:Name="SubjectInput" Width="200" Height="30" Margin="10" VerticalAlignment="Top" Tag="Введіть предмет"/>
+        
+        <TextBlock Text="Кількість сторінок" Margin="10" HorizontalAlignment="Center"/>
+        <TextBox x:Name="PagesInput" Width="200" Height="30" Margin="10" VerticalAlignment="Top" Tag="Введіть кількість сторінок"/>
+        
+        <TextBlock Text="Теми" Margin="10" HorizontalAlignment="Center"/>
+        <TextBox x:Name="TopicsInput" Width="200" Height="100" Margin="10" VerticalAlignment="Top" AcceptsReturn="True" Tag="Введіть теми через кому"/>
+        
+        <TextBlock Text="Завершено" Margin="10" Visibility="Collapsed" x:Name="FinishedLabel" HorizontalAlignment="Center"/>
+        <RadioButton Content="Завершено" x:Name="FinishedRadioButton" Margin="10" Visibility="Collapsed" HorizontalAlignment="Center"/>
+        
+        <Button x:Name="ShowInfoButton" Content="Показати інформацію" Width="200" Height="40" VerticalAlignment="Bottom" Margin="10" Click="ShowInfoButton_Click"/>
+        
+        <TextBlock x:Name="ResultText" Margin="10" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Window>
