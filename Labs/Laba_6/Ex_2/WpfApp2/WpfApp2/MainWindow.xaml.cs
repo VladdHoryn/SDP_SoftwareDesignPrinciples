@@ -18,13 +18,11 @@ namespace WpfApp2
             {
                 if (selectedItem.Content.ToString() == "Конспект")
                 {
-                    // Показати RadioButton для завершеності
                     FinishedLabel.Visibility = Visibility.Visible;
                     FinishedRadioButton.Visibility = Visibility.Visible;
                 }
                 else
                 {
-                    // Приховати RadioButton для завершеності
                     FinishedLabel.Visibility = Visibility.Collapsed;
                     FinishedRadioButton.Visibility = Visibility.Collapsed;
                 }
@@ -46,7 +44,6 @@ namespace WpfApp2
             }
             else
             {
-                // Додаємо логіку для Compendium, включаючи isFinished
                 material = new Compendium
                 {
                     Subject = subject,
@@ -55,8 +52,7 @@ namespace WpfApp2
                     IsFinished = FinishedRadioButton.IsChecked == true
                 };
             }
-
-            // Показати інформацію про матеріал
+            
             ResultText.Text = (material as Test).ShowInfoAboutTest();
         }
     }
